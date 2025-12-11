@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!--fortæller at den skal skalere pænt til mobil-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Caroline Amundsen</title>
+    <link rel="stylesheet" href="ny.css" />
+  </head>
+  <body>
+    <header>
+      <!-- Burgermenu -->
+      <nav class="menu-wrapper">
+        <div class="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="dropdown">
+          <a href="#top">Top</a>
+          <a href="#about">Om mig</a>
+          <a href="#work">Portfolio</a>
+          <a href="#contact">Kontakt</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- sektioner -->
+      <section id="top" class="toppen"></section>
+
+      <section id="about" class="ommig">
+        <div class="ommig-image">
+          <img
+            class="about-image"
+            src="img/slut-prof.jpg"
+            alt="Billede af mig"
+          />
+        </div>
+
+        <div class="text-wrapper">
+          <h2 class="about-title">Hvem er jeg?</h2>
+          <p class="about-text">
+            Mit navn er Caroline Amundsen, og jeg er den blæksprutte, du måske
+            ikke vidste, at du manglede.
+          </p>
+
+          <p>
+            Min rejse startede som tatovør tilbage i 2019, og siden da har jeg
+            forfinet mit håndværk og bygget Amundsen Ink op, som jeg driver i
+            dag.
+            <br />De seneste par år har jeg dog haft en stigende lyst til at
+            udvide både min portfolio, mine kompetencer, og udvide min horisont
+            til andre brancher. Derfor er jeg nu i gang med
+            multimediedesigner-uddannelsen. <br />Jeg brænder for at skabe og
+            udvikle, og trives især når jeg får lov til at gøre brug af mine
+            kreative evner.
+          </p>
+          <p>
+            Herunder finder du et uddrag af mine kompetencer og min portfolio.
+            Hvis du sidder tilbage med spørgsmål, undren eller bare nysgerrighed
+            <br />
+            — så tøv ikke med at kontakte mig.
+          </p>
+        </div>
+      </section>
+
+      <section id="work" class="portfolio-video">
+        <div class="video-wrapper">
+          <video autoplay loop muted playsinline preload="metadata">
+            <source src="video/videoeks.mp4" type="video/mp4" />
+          </video>
+        </div>
+
+        <div class="portfolio-content">
+          <h1>PORTFOLIO</h1>
+        </div>
+      </section>
+
+      <section class="portfolio-section">
+        <div class="portfolio-heading">
+          <h1 class="portfolio-title">Kompetencer</h1>
+          <span class="portfolio-underline"></span>
+        </div>
+
+        <div class="portfolio-grid">
+          <div class="tile">
+            <img src="img/card-billede-et.jpg" alt="projekt-1" />
+          </div>
+
+          <div class="tile tile-text"><h2>Visuel Storyteller</h2></div>
+
+          <div class="tile tile-text"><h2>Digital Designer</h2></div>
+
+          <div class="tile">
+            <img src="img/card-billede-to.jpg" alt="projekt-2" />
+          </div>
+
+          <div class="tile">
+            <img src="img/card-billede-fire.jpg" alt="projekt-3" />
+          </div>
+
+          <div class="tile tile-text"><h2>Brand Marketing Specialist</h2></div>
+
+          <div class="tile">
+            <img src="img/card-billede-tre.jpg" alt="projekt-4" />
+          </div>
+
+          <div class="tile tile-text"><h2>Content Strateg</h2></div>
+        </div>
+      </section>
+
+      <section class="vaerktøjskasse">
+        <div class="kasse-content">
+          <div class="kasse-text">
+            <div class="over-tekst">
+              <p>
+                Jeg har gennem mine år på arbejdsmarkedet og uddannelse opbygget
+                en bred værktøjskasse. Jeg arbejder rutineret i en række
+                programmer og sociale medier - især
+                <strong>Meta-platformene</strong> , hvor jeg også har en smule
+                erfaring med Paid Ads. <br />
+                Kendskabet til flere forskellige kanaler giver mig en solid
+                fornemmelse for, hvad der faktisk virker hvor, og hvilke brugere
+                der typisk bevæger sig på tværs af platformene, samt hvilken
+                slags content der virker hvor.
+              </p>
+            </div>
+
+            <div class="under-tekst">
+              <p>
+                Jeg har jeg erfaring med <strong>HTML, CSS</strong> og
+                <strong>SEO</strong>, som jeg bruger til opgaver, hvor der
+                kræves teknisk forståelse og kodning af hjemmesider - både
+                visuelt og performance-mæssigt.
+              </p>
+              <p>
+                Jeg elsker at lære nyt og holder mig løbende opdateret. Så hvis
+                du har en opgave, der ligger en smule uden for mine nuværende
+                værktøjer, behøver det ikke være en hindring. <br />
+                Lad os tage en snak og se, hvordan vi kan få din idé til at
+                spille.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="kasse-img mobile-only">
+          <picture>
+            <source
+              media="(min-width: 600px)"
+              srcset="img/program-vandret.png"
+            />
+            <img src="img/program-lodret.png" alt="program-lodret" />
+          </picture>
+        </div>
+      </section>
+
+      <section id="contact" class="kontakt">
+        <div><h2>Kontakt</h2></div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
