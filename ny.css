@@ -183,7 +183,9 @@ section {
   width: 100%; 
   border-radius: 8px;
 }
-
+.ommig-image{
+  margin-right: 2rem;
+}
 @media (min-width: 768px) {
   .ommig {
     flex-direction: row;      /* desktop: side om side */
@@ -248,10 +250,9 @@ section {
   position: relative;
 font-size: xx-large;
   z-index: 2;   
-  padding: 2rem 0,75rem;
+  padding: 2rem 0.75rem;
   color: #F8F9FA; 
 }
-
 
 /* Tablet */
 @media (min-width: 768px) {
@@ -273,10 +274,8 @@ font-size: xx-large;
 }
 
 /* =Grid med cards i portfolio = */
-.portfolio-section {
-padding: 2rem;
-margin-right: 2rem;
-}
+
+
 .portfolio-heading {
   text-align: center;
   margin: 2rem 0 1.5rem;
@@ -303,7 +302,10 @@ margin-right: 2rem;
   background-color: #212529;
 }
 
-
+.portfolio-section{
+  padding: 2rem;
+  margin-right: 2rem;
+}
 .portfolio-grid {
   display: grid;
   align-content: center;
@@ -374,71 +376,102 @@ margin-right: 2rem;
       "a c e g"
       "b d f h";
   }
-  
+}
   @media (max-width: 900px) {
   .tile-text h1 {
     font-size: 1rem;
   }
-}
 }
 
 /* =Værktøjskasse afsnit i portfolio= */
 
 .vaerktøjskasse {
 position: relative;
-padding: 2rem 0rem;
-margin-right: 2rem;
+padding: 2rem;
 }
 
-.kasse-title {
-  color: #212529;
-  margin-bottom: 1rem;
+.mobile-only { 
+display: block; }
+
+.kasse-text{
+  margin-right: 2rem;
+}
+.kasse-img{
+padding-top: 2rem;
 }
 
-.kasse-img {
-margin-top: 2rem;
-}
 /* Desktop */
 @media (min-width: 900px){
-
-  .vaerktøjskasse{
-  display: flex;
-  justify-content: flex-end;
-  background-image: url("img/program-vandret.png");
-  background-repeat: no-repeat;
-  background-position: left bottom 30%;
-  margin-bottom: 1rem;
-  margin-left: 3rem;
+.vaerktøjskasse{
+display: flex;
+justify-content: flex-end;
+align-items: center;
+background-image: url("img/program-vandret.png");
+background-repeat: no-repeat;
+background-position: left 0 bottom 25%;
+margin: 4rem;
   }
 
 .kasse-content{
-  position: relative;
-  margin-left: auto;
-  padding-right: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+
+padding-right: 2rem;
+display: flex;
+flex-direction: column;
+justify-content: center;
 }
 .over-tekst{
-max-width: 1000px;
-text-align: right;
+text-align: center;
 padding-left: 4rem;
 }
+
 .under-tekst{
-max-width: 600px;
+max-width: 500px;
 text-align: right;
 margin-top: 2rem;
 margin-left: auto;
 margin-bottom: 2rem;
 padding-top: 1rem;
 padding-left: 2rem;
-}
+  }
 
 .mobile-only{
   display: none;
 }
 }
+
+
 /* ==Kontakt afsnit= */
-.kontakt {
-  background: #DDB982;
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #DDB982;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 1rem;
+  background-color: #f2f2f2;
+  padding: 2rem;
 }
