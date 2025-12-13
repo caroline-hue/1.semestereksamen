@@ -166,46 +166,71 @@
           </picture>
         </div>
       </section>
-
+      <!-- Kontaktafsnit -->
       <section id="contact" class="kontakt">
+        <div><h1>Kontakt mig</h1></div>
+
+        <div class="container-info">
+          <div><h2>Mine kontaktinformationer</h2></div>
+
+          <div><h4>E-mail</h4></div>
+          <div class="boks">
+            <p>amundsenink@iware.dk</p>
+          </div>
+
+          <div><h4>Tlf. Nummer</h4></div>
+          <div class="boks">
+            <p><strong>+45</strong> 42 73 38 XX</p>
+          </div>
+
+          <div><h4>Adresse</h4></div>
+          <div class="boks">
+            <p>Lindved, Odense S</p>
+          </div>
+        </div>
+
         <div class="container">
           <form action="action_page.php">
-            <label for="fname">First Name</label>
+            <label for="fname">Navn</label>
             <input
               type="text"
               id="fname"
               name="firstname"
-              placeholder="Your name.."
+              placeholder="Fornavn og Efternavn"
             />
 
-            <label for="lname">Last Name</label>
+            <label for="lname">Telefonnummer</label>
             <input
               type="text"
               id="lname"
               name="lastname"
-              placeholder="Your last name.."
+              placeholder="+45 XX XX XX XX"
             />
 
-            <label for="country">Country</label>
+            <label for="country">Emne</label>
             <select id="country" name="country">
-              <option value="australia">Australia</option>
-              <option value="canada">Canada</option>
-              <option value="usa">USA</option>
+              <option value="australia">Praktikplads</option>
+              <option value="canada">Freelance opgave</option>
+              <option value="usa">Tatovering</option>
             </select>
 
-            <label for="subject">Subject</label>
+            <label for="subject">Beskeden</label>
             <textarea
               id="subject"
               name="subject"
-              placeholder="Write something.."
+              placeholder="Beskeden skrives her..."
               style="height: 200px"
             ></textarea>
 
-            <input type="submit" value="Submit" />
+            <input type="submit" value="Send" />
           </form>
         </div>
       </section>
     </main>
-    <footer></footer>
+    <footer class="site-footer">
+      <div class="footer-img">
+        <img src="img/footer-tre.webp" alt="footer-billede" />
+      </div>
+    </footer>
   </body>
 </html>
