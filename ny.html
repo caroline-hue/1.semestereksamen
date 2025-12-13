@@ -167,63 +167,84 @@
         </div>
       </section>
       <!-- Kontaktafsnit -->
+
       <section id="contact" class="kontakt">
-        <div><h1>Kontakt mig</h1></div>
-
-        <div class="container-info">
-          <div><h2>Mine kontaktinformationer</h2></div>
-
-          <div><h4>E-mail</h4></div>
-          <div class="boks">
-            <p>amundsenink@iware.dk</p>
-          </div>
-
-          <div><h4>Tlf. Nummer</h4></div>
-          <div class="boks">
-            <p><strong>+45</strong> 42 73 38 XX</p>
-          </div>
-
-          <div><h4>Adresse</h4></div>
-          <div class="boks">
-            <p>Lindved, Odense S</p>
-          </div>
+        <div>
+          <h1>Kontakt mig</h1>
+          <div class="underline"><span class="kontakt-underline"></span></div>
+          <p>
+            Skal vi skabe noget fedt sammen, eller kunne din virksomhed have
+            gavn af en praktikant? <br />
+            tøv ikke med at tage kontakt.
+          </p>
         </div>
 
-        <div class="container">
-          <form action="action_page.php">
-            <label for="fname">Navn</label>
-            <input
-              type="text"
-              id="fname"
-              name="firstname"
-              placeholder="Fornavn og Efternavn"
-            />
+        <div class="desktop-flex">
+          <div class="stack">
+            <div class="kontakt-billedet">
+              <img
+                class="kontakt-billede"
+                src="img/kontakt-billede.webp"
+                alt="program-lodret"
+              />
+            </div>
 
-            <label for="lname">Telefonnummer</label>
-            <input
-              type="text"
-              id="lname"
-              name="lastname"
-              placeholder="+45 XX XX XX XX"
-            />
+            <div class="container-info">
+              <div><h2>Kontaktinformationer</h2></div>
 
-            <label for="country">Emne</label>
-            <select id="country" name="country">
-              <option value="australia">Praktikplads</option>
-              <option value="canada">Freelance opgave</option>
-              <option value="usa">Tatovering</option>
-            </select>
+              <div><h4>E-mail</h4></div>
+              <div class="boks">
+                <p>amundsenink@iware.dk</p>
+              </div>
 
-            <label for="subject">Beskeden</label>
-            <textarea
-              id="subject"
-              name="subject"
-              placeholder="Beskeden skrives her..."
-              style="height: 200px"
-            ></textarea>
+              <div><h4>Tlf. Nummer</h4></div>
+              <div class="boks">
+                <p><strong>+45</strong> 42 73 38 XX</p>
+              </div>
 
-            <input type="submit" value="Send" />
-          </form>
+              <div><h4>Adresse</h4></div>
+              <div class="boks">
+                <p>Lindved, Odense S</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <form action="action_page.php">
+              <label for="fname">Navn</label>
+              <input
+                type="text"
+                id="fname"
+                name="firstname"
+                placeholder="Fornavn og Efternavn"
+              />
+
+              <label for="lname">Telefonnummer</label>
+              <input
+                type="text"
+                id="lname"
+                name="lastname"
+                placeholder="+45 XX XX XX XX"
+              />
+
+              <label for="country">Emne</label>
+              <select id="country" name="country">
+                <option value="australia">Praktikplads</option>
+                <option value="canada">Freelance opgave</option>
+                <option value="usa">Tatovering</option>
+              </select>
+
+              <label for="subject">Beskeden</label>
+              <textarea
+                id="subject"
+                name="subject"
+                placeholder="Beskeden skrives her..."
+                style="height: 200px"
+              ></textarea>
+
+              <input type="submit" value="Send" />
+            </form>
+          </div>
         </div>
       </section>
     </main>
