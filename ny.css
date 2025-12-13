@@ -420,10 +420,8 @@ background-image: url("img/program-vandret.png");
 background-repeat: no-repeat;
 background-position: left 0 bottom 25%;
 margin: 4rem;
-  }
-
+}
 .kasse-content{
-
 padding-right: 2rem;
 display: flex;
 flex-direction: column;
@@ -439,7 +437,6 @@ max-width: 500px;
 text-align: right;
 margin-top: 2rem;
 margin-left: auto;
-margin-bottom: 2rem;
 padding-top: 1rem;
 padding-left: 2rem;
   }
@@ -448,12 +445,35 @@ padding-left: 2rem;
   display: none;
 }
 }
+/* ==Cards med flere kompetencer= */
+.container-foto{
+display: block;
+justify-content: center;
+padding: 2rem 3.5rem 2rem 1rem;
+}
 
+.container-maleri{
+display: block;
+justify-content: center;
+padding: 2rem 3.5rem 2rem 1rem; 
+}
+
+@media (min-width: 900px){
+.container-cards{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+padding-left: 2rem;
+padding-right: 2rem;
+margin: 0rem;
+}
+}
 /* ==Kontakt afsnit= */
 
 .kontakt{
 background-color: #DDB982;
-padding: 2rem 3.5rem 2rem 1rem;
+padding-left: 2rem;
+padding-right: 2rem;
 }
 .kontakt h1{
 text-align: center;
@@ -579,6 +599,8 @@ margin: 0rem;
   display: none;
 }
 }
+
+
 /*== Footer ==*/
 .site-footer {
   background-color: #DDB982;
