@@ -455,12 +455,6 @@ justify-content: center;
 padding: 2rem 3.5rem 2rem 1rem;
 }
 
-.container-maleri{
-display: block;
-justify-content: center;
-padding: 2rem 3.5rem 2rem 1rem; 
-}
-
 .container-cards p{
   padding-left: 1rem;
   padding-right: 1rem;
@@ -482,6 +476,17 @@ padding-left: 2rem;
 padding-right: 2rem;
 margin: 0rem;
 }
+
+.container-foto {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.foto-image { order: 1; }
+.foto-title { order: 2; }
+.foto-text  { order: 3; }
+
 }
 /* ==Kontakt afsnit= */
 
@@ -500,6 +505,9 @@ color:#3D3D3D;
 font-weight: 300;
 }
 
+.kontakt-billede{
+  border-radius: 8px;
+}
 .kontakt-underline {
 display: inline-block;
 width: 100%;
