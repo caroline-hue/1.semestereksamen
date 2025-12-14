@@ -231,10 +231,16 @@ section {
 /* ===== Portfolio ===== */
 .portfolio-video {
   position: relative;
-  min-height: 100vh;
   overflow: hidden;
 }
 
+/* Mørkhed på video  */
+.video-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6); 
+  z-index: 1;
+}
 .video-wrapper {
   position: absolute;
   inset: 0;
@@ -264,9 +270,6 @@ font-size: xx-large;
   .portfolio-content {
     max-width: 600px;
     padding: 3rem;
-  }
-   .portfolio-video {
-    height: 100vh;
   }
 }
 
@@ -458,6 +461,18 @@ justify-content: center;
 padding: 2rem 3.5rem 2rem 1rem; 
 }
 
+.container-cards p{
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+.container-cards h2{
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-align: center;
+}
 @media (min-width: 900px){
 .container-cards{
   display: flex;
