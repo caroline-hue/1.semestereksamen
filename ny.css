@@ -448,16 +448,21 @@ padding-left: 2rem;
   display: none;
 }
 }
-/* ==Cards med flere kompetencer= */
+/* ==Flere kompetencer sektion= */
 .container-foto{
-display: block;
-justify-content: center;
-padding: 2rem 3.5rem 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
 }
 
+.container-cards{
+  margin-bottom: 0rem;
+  background-color: #DDB982;
+}
 .container-cards p{
   padding-left: 1rem;
-  padding-right: 1rem;
+  padding-right: 2rem;
   padding-bottom: 2rem;
   text-align: center;
 }
@@ -469,9 +474,9 @@ padding: 2rem 3.5rem 2rem 1rem;
 }
 @media (min-width: 900px){
 .container-cards{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+display: flex;
+flex-direction: row;
+justify-content: center;
 padding-left: 2rem;
 padding-right: 2rem;
 margin: 0rem;
@@ -486,6 +491,52 @@ margin: 0rem;
 .foto-image { order: 1; }
 .foto-title { order: 2; }
 .foto-text  { order: 3; }
+
+}
+
+/* ==Flere kompetencer anden række= */
+.container-foto-to{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+}
+
+.container-cards-to{
+  margin-bottom: 0rem;
+  background-color: #DDB982;
+}
+.container-cards-to p{
+  padding-left: 1rem;
+  padding-right: 2rem;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+.container-cards-to h2{
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-align: center;
+}
+@media (min-width: 900px){
+.container-cards-to{
+display: inline-flex;
+flex-direction: row;
+justify-content: space-between;
+padding-left: 6rem;
+max-width: 400px;
+}
+
+.container-foto-to {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+padding-left: 6rem;
+}
+
+.foto-image-to { order: 1; }
+.foto-title-to { order: 2; }
+.foto-text-to  { order: 3; }
 
 }
 /* ==Kontakt afsnit= */
