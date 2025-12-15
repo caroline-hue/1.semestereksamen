@@ -286,7 +286,7 @@ font-size: xx-large;
 
 .portfolio-heading {
   text-align: center;
-  margin: 2rem 0 1.5rem;
+  padding: 3rem;
 }
 
 .portfolio-title {
@@ -295,7 +295,6 @@ font-size: xx-large;
   text-transform: uppercase;
   margin-bottom: 0.5rem;
 }
-
 
 @keyframes underline-grow {
 to {
@@ -315,13 +314,10 @@ animation: underline-grow 5s ease-out forwards;
 }
 
 
-.portfolio-section{
-  padding: 2rem;
-  margin-right: 2rem;
-}
 .portfolio-grid {
   display: grid;
   align-content: center;
+  padding-right: 2rem;
   gap: 0rem;
   grid-template-columns: repeat(2, 1fr);  /* 2 kolonner = 2 vandrette */
 
@@ -353,7 +349,7 @@ animation: underline-grow 5s ease-out forwards;
   align-items: center;  
   justify-content: center; 
   text-align: center;
-  padding: 1rem;
+  padding: 2rem;
   color: #212529;
   font-weight: 100 !important;
 }
@@ -391,6 +387,9 @@ animation: underline-grow 5s ease-out forwards;
   }
 }
   @media (max-width: 900px) {
+    .portfolio-underline {
+      width: 100%;
+    }
   .tile-text h1 {
     font-size: 1rem;
   }
@@ -421,18 +420,16 @@ justify-content: flex-end;
 align-items: center;
 background-image: url("img/program-vandret.png");
 background-repeat: no-repeat;
-background-position: left 0 bottom 25%;
-margin: 4rem;
+background-position: left 10% bottom 25%;
+margin: 3rem;
 }
 .kasse-content{
-padding-right: 2rem;
 display: flex;
 flex-direction: column;
-justify-content: center;
 }
 .over-tekst{
 text-align: center;
-padding-left: 4rem;
+padding-left: 2rem;
 }
 
 .under-tekst{
@@ -441,7 +438,7 @@ text-align: right;
 margin-top: 2rem;
 margin-left: auto;
 padding-top: 1rem;
-padding-left: 2rem;
+padding-left: 4rem;
   }
 
 .mobile-only{
@@ -477,15 +474,12 @@ padding-left: 2rem;
 display: flex;
 flex-direction: row;
 justify-content: center;
-padding-left: 2rem;
-padding-right: 2rem;
-margin: 0rem;
+gap: 3rem;
+padding: 2rem;
 }
 
 .container-foto {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+padding: 0;
 }
 
 .foto-image { order: 1; }
@@ -505,6 +499,7 @@ margin: 0rem;
 .container-cards-to{
   margin-bottom: 0rem;
   background-color: #DDB982;
+padding-bottom: 2rem;
 }
 .container-cards-to p{
   padding-left: 1rem;
@@ -519,25 +514,27 @@ margin: 0rem;
   text-align: center;
 }
 @media (min-width: 900px){
-.container-cards-to{
-display: inline-flex;
-flex-direction: row;
-justify-content: space-between;
-padding-left: 6rem;
-max-width: 400px;
-}
+  .container-cards-to{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #DDB982;
+    gap: 6rem;
+    padding-top: 0rem;
+  }
 
 .container-foto-to {
   display: flex;
-  flex-direction: column;
-  gap: 1rem;
-padding-left: 6rem;
+  flex-direction: column center;
 }
 
 .foto-image-to { order: 1; }
 .foto-title-to { order: 2; }
 .foto-text-to  { order: 3; }
 
+.foto-text-to{
+width: 425px;
+}
 }
 /* ==Kontakt afsnit= */
 
