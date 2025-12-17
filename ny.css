@@ -525,7 +525,8 @@ padding-bottom: 2rem;
 
 .container-foto-to {
   display: flex;
-  flex-direction: column center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .foto-image-to { order: 1; }
