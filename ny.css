@@ -128,8 +128,9 @@ padding: 80px 20px;
 .toppen {
 background-image: url("img/min-top.jpg");
 background-size: cover;
-background-position: 85% center;
-height: 100vh;
+background-repeat: no-repeat;
+background-position: center right 20%;
+min-height: 80vh;
 }
 
 /* Tablet og op */
@@ -143,7 +144,7 @@ font-size: 18px;
 }
 
 .toppen {
-background-position: 70% center;
+background-position: 100% center;
 }
 
 }
@@ -161,6 +162,7 @@ padding: 120px 80px;
 
 .toppen {
 background-position: center center; 
+height: 100vh;
 }
 }
 
