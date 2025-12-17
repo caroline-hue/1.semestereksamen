@@ -13,6 +13,7 @@
     <title>Caroline Amundsen</title>
     <link rel="stylesheet" href="ny.css" />
   </head>
+
   <body>
     <header>
       <!-- Burgermenu -->
@@ -31,6 +32,7 @@
         </div>
       </nav>
     </header>
+
     <main>
       <!-- sektioner -->
 
@@ -48,6 +50,7 @@
 
         <div class="text-wrapper">
           <h2 class="about-title">Hvem er jeg?</h2>
+
           <p class="about-text">
             Mit navn er Caroline Amundsen, og jeg er den blæksprutte, du måske
             ikke vidste, at du manglede.
@@ -64,6 +67,7 @@
             udvikle, og trives især når jeg får lov til at gøre brug af mine
             kreative evner.
           </p>
+
           <p>
             Herunder finder du et uddrag af mine kompetencer og min portfolio.
             Hvis du sidder tilbage med spørgsmål, undren eller bare nysgerrighed
@@ -75,24 +79,24 @@
 
       <!-- Portfolio sektion-->
       <section id="work" class="portfolio-video">
+        <div class="portfolio-content">
+          <h1>PORTFOLIO</h1>
+          <span class="portfolio-underline"></span>
+        </div>
+
         <div class="video-wrapper">
           <video autoplay loop muted playsinline preload="metadata">
             <source src="video/portfolio-video.mp4" type="video/mp4" />
           </video>
         </div>
-
-        <div class="video-overlay"></div>
-
-        <div class="portfolio-content">
-          <h1>PORTFOLIO</h1>
-        </div>
       </section>
+
       <!-- Kompetencer -->
       <section class="portfolio-section">
         <div class="portfolio-heading">
           <h1 class="portfolio-title">Kompetencer</h1>
-          <span class="portfolio-underline"></span>
         </div>
+
         <!-- Kompetence - Grid-->
         <div class="portfolio-grid">
           <div class="tile">
@@ -111,7 +115,7 @@
             <img src="img/card-billede-fire.jpg" alt="projekt-3" />
           </div>
 
-          <div class="tile tile-text"><h2>Brand Marketing Specialist</h2></div>
+          <div class="tile tile-text"><h2>Brand Marketing</h2></div>
 
           <div class="tile">
             <img src="img/card-billede-tre.jpg" alt="projekt-4" />
@@ -212,7 +216,7 @@
               <img
                 src="img/maleri-img.jpg"
                 class="container-image"
-                alt="fotografering-img"
+                alt="maleri-img"
               />
             </div>
           </div>
@@ -232,7 +236,7 @@
               <img
                 src="img/tatovering-img.jpg"
                 class="container-image"
-                alt="fotografering-img"
+                alt="tatovering-img"
               />
             </div>
           </div>
@@ -254,7 +258,7 @@
               <img
                 src="img/Prototype.jpg"
                 class="container-image-to"
-                alt="fotografering-img"
+                alt="Prototype-img"
               />
             </div>
           </div>
@@ -273,7 +277,7 @@
               <img
                 src="img/tshirt.jpg"
                 class="container-image-to"
-                alt="fotografering-img"
+                alt="t-shirt-img"
               />
             </div>
           </div>
@@ -326,33 +330,33 @@
           <!-- Kontaktformular-->
           <div class="container">
             <form action="action_page.php">
-              <label for="fname">Navn</label>
+              <label for="name">Navn</label>
               <input
                 type="text"
-                id="fname"
-                name="firstname"
+                id="name"
+                name="name"
                 placeholder="Fornavn og Efternavn"
               />
 
-              <label for="lname">Telefonnummer</label>
+              <label for="number">Telefonnummer</label>
               <input
                 type="text"
-                id="lname"
-                name="lastname"
+                id="number"
+                name="number"
                 placeholder="+45 XX XX XX XX"
               />
 
-              <label for="country">Emne</label>
-              <select id="country" name="country">
-                <option value="australia">Praktikplads</option>
-                <option value="canada">Freelance opgave</option>
-                <option value="usa">Tatovering</option>
+              <label for="subject">Emne</label>
+              <select id="subject" name="country">
+                <option value="raktikplads">Praktikplads</option>
+                <option value="freelance">Freelance opgave</option>
+                <option value="atovering">Tatovering</option>
               </select>
 
-              <label for="subject">Beskeden</label>
+              <label for="message">Beskeden</label>
               <textarea
-                id="subject"
-                name="subject"
+                id="message"
+                name="message"
                 placeholder="Beskeden skrives her..."
                 style="height: 200px"
               ></textarea>
